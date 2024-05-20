@@ -1,0 +1,41 @@
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\bin\Debug\net8.0-windows\ЗЛП И ТЗ.exe
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\bin\Debug\net8.0-windows\ЗЛП И ТЗ.deps.json
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\bin\Debug\net8.0-windows\ЗЛП И ТЗ.runtimeconfig.json
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\bin\Debug\net8.0-windows\ЗЛП И ТЗ.dll
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\bin\Debug\net8.0-windows\ЗЛП И ТЗ.pdb
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.csproj.AssemblyReference.cache
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП_И_ТЗ.Form1.resources
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.csproj.GenerateResource.cache
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.AssemblyInfoInputs.cache
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.AssemblyInfo.cs
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.csproj.CoreCompileInputs.cache
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.csproj.Up2Date
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.dll
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\refint\ЗЛП И ТЗ.dll
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.pdb
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.genruntimeconfig.cache
+C:\Users\Horomi_tyan\Desktop\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ref\ЗЛП И ТЗ.dll
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\bin\Debug\net8.0-windows\ЗЛП И ТЗ.exe
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\bin\Debug\net8.0-windows\ЗЛП И ТЗ.deps.json
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\bin\Debug\net8.0-windows\ЗЛП И ТЗ.runtimeconfig.json
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\bin\Debug\net8.0-windows\ЗЛП И ТЗ.dll
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\bin\Debug\net8.0-windows\ЗЛП И ТЗ.pdb
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.csproj.AssemblyReference.cache
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП_И_ТЗ.Form1.resources
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.csproj.GenerateResource.cache
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.AssemblyInfoInputs.cache
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.AssemblyInfo.cs
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.csproj.CoreCompileInputs.cache
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.sourcelink.json
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.csproj.Up2Date
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.dll
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\refint\ЗЛП И ТЗ.dll
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.pdb
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ЗЛП И ТЗ.genruntimeconfig.cache
+C:\Users\Horomi_tyan\Documents\Practice_PM02\Граф. метод\ЗЛП И ТЗ\ЗЛП И ТЗ\obj\Debug\net8.0-windows\ref\ЗЛП И ТЗ.dll

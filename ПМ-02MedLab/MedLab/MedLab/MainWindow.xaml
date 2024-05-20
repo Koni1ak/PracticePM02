@@ -1,0 +1,36 @@
+﻿<Window x:Class="MedLab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedLab"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        Title="MainWindow"  Loaded="Window_Loaded" Height="450" WindowStyle="None" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="MoveForm" Width="396">
+    <Window.Clip>
+        <RectangleGeometry Rect="0,0,396,450" RadiusX="10" RadiusY="10"/>
+    </Window.Clip>
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="-0.3,0.5">
+                <GradientStop Color="#FF278A32" Offset="0.003"/>
+                <GradientStop Color="#FF23B7AD" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="X" HorizontalAlignment="Left" MouseDoubleClick="ExitForm" Margin="352,10,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold"/>
+        <TextBox x:Name="LogTB" HorizontalAlignment="Left" MaxLength="20" Margin="178,202,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192" FontSize="20" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White"/>
+        <PasswordBox x:Name="PasTB" HorizontalAlignment="Left" MaxLength="20" Margin="178,251,0,0" VerticalAlignment="Top" Width="192" FontSize="20" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White"/>
+        <Label Content="Login:" HorizontalAlignment="Left" Margin="76,187,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="33,244,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Foreground="White"/>
+        <Button x:Name="loginBtn" Content="Login" HorizontalAlignment="Center" Click="BtnStartWindw" Margin="0,373,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Width="152" Background="{x:Null}" BorderBrush="White" Foreground="White"/>
+        <Image HorizontalAlignment="Center" Height="140"  Margin="0,29,0,0" VerticalAlignment="Top" Width="158" Source="/image/Logo-removebg-preview.png"/>
+        <Button x:Name="regBtn" Content="Registration" HorizontalAlignment="Center" Click="Button_Click" Margin="0,409,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Width="152" Background="{x:Null}" BorderBrush="White" Foreground="White"/>
+        <TextBox x:Name="CapTB" HorizontalAlignment="Left" MaxLength="20" Margin="179,317,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="190" FontSize="20" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White" TextChanged="CapTB_TextChanged"/>
+        <TextBlock x:Name="CapTB1" HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" FontFamily="Bodoni MT Poster Compressed" FontSize="36" FontStyle="Italic" FontWeight="Bold" Visibility="Visible" SnapsToDevicePixels="True" AutomationProperties.IsOffscreenBehavior="Default" TextAlignment="Center" Margin="16,309,0,0">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+        </TextBlock>
+    </Grid>
+</Window>

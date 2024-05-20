@@ -1,0 +1,340 @@
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\MedLab.exe.config
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\MedLab.exe
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\MedLab.pdb
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.csproj.AssemblyReference.cache
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MainWindow.g.cs
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\App.g.cs
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab_MarkupCompile.cache
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab_MarkupCompile.lref
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MainWindow.baml
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.g.resources
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.Properties.Resources.resources
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.csproj.GenerateResource.cache
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.csproj.CoreCompileInputs.cache
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.exe
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.pdb
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\StartWindow.g.cs
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\StartWindow.baml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\EntityFramework.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\EntityFramework.SqlServer.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\EntityFramework.xml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\EntityFramework.SqlServer.xml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\ru\EntityFramework.resources.dll
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab_Content.g.cs
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.csproj.CopyComplete
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\LabWindow.g.cs
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\LabWindow.baml
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\BuhgWindow.g.cs
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\BuhgWindow.baml
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\RegWindow.g.cs
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\RegWindow.baml
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Timer.g.cs
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Timer.baml
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Code.g.cs
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Code.baml
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\OkazUsl.g.cs
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Compression.Portable.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Licensing.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Pdf.Portable.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\System.Text.Encoding.CodePages.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Compression.Portable.xml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Pdf.Portable.xml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\App.baml
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\OkazUsl.baml
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\AddEditPage.g.cs
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\AddEditPage.baml
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AddEditPage1.g.cs
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AnlPage.g.cs
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AddEditPage1.baml
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AnlPage.baml
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AddEditPage2.g.cs
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\BuhPage.g.cs
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AddEditPage2.baml
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\BuhPage.baml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\BouncyCastle.Crypto.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\itextsharp.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\PdfSharp.Charting.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\PdfSharp.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\itextsharp.xml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\PdfSharp.xml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\PdfSharp.Charting.xml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\de\PdfSharp.resources.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\de\PdfSharp.Charting.resources.dll
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\Charts.g.cs
+D:\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\Charts.baml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.Wpf.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.pdb
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.xml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.Wpf.pdb
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.Wpf.xml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Compression.Base.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Data.WPF.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Pdf.Base.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.SfGrid.WPF.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.SfGridConverter.WPF.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Shared.WPF.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.XlsIO.Base.dll
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Compression.Base.xml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Data.WPF.xml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Pdf.Base.xml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.SfGrid.WPF.xml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.SfGridConverter.WPF.xml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Shared.WPF.xml
+D:\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.XlsIO.Base.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\MedLab.exe.config
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\MedLab.exe
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\MedLab.pdb
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\EntityFramework.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\itextsharp.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\PdfSharp.Charting.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\PdfSharp.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Compression.Base.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Compression.Portable.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Data.WPF.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Pdf.Base.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Pdf.Portable.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.SfGrid.WPF.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.SfGridConverter.WPF.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Shared.WPF.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.XlsIO.Base.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\EntityFramework.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\itextsharp.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.pdb
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\PdfSharp.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\PdfSharp.Charting.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Compression.Base.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Compression.Portable.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Data.WPF.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Pdf.Base.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Pdf.Portable.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.SfGrid.WPF.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.SfGridConverter.WPF.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Shared.WPF.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.XlsIO.Base.xml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.csproj.AssemblyReference.cache
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\AddEditPage.g.cs
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\BuhgWindow.g.cs
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Code.g.cs
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\LabWindow.g.cs
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MainWindow.g.cs
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\OkazUsl.g.cs
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AddEditPage1.g.cs
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AddEditPage2.g.cs
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AnlPage.g.cs
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\BuhPage.g.cs
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\Charts.g.cs
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\RegWindow.g.cs
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\StartWindow.g.cs
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Timer.g.cs
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\App.g.cs
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab_Content.g.cs
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab_MarkupCompile.cache
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab_MarkupCompile.lref
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\App.baml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\AddEditPage.baml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\BuhgWindow.baml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Code.baml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\LabWindow.baml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MainWindow.baml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\OkazUsl.baml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AddEditPage1.baml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AddEditPage2.baml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AnlPage.baml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\BuhPage.baml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\Charts.baml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\RegWindow.baml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\StartWindow.baml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Timer.baml
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.g.resources
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.Properties.Resources.resources
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.csproj.GenerateResource.cache
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.csproj.CoreCompileInputs.cache
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.csproj.Up2Date
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.exe
+C:\Users\KON\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.pdb
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\MedLab.exe.config
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\MedLab.exe
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\MedLab.pdb
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\EntityFramework.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\itextsharp.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\PdfSharp.Charting.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\PdfSharp.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Compression.Base.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Compression.Portable.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Data.WPF.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Pdf.Base.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Pdf.Portable.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.SfGrid.WPF.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.SfGridConverter.WPF.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Shared.WPF.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.XlsIO.Base.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\EntityFramework.xml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\itextsharp.xml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.pdb
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.xml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\PdfSharp.xml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\PdfSharp.Charting.xml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Compression.Base.xml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Compression.Portable.xml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Data.WPF.xml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Pdf.Base.xml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Pdf.Portable.xml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.SfGrid.WPF.xml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.SfGridConverter.WPF.xml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Shared.WPF.xml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.XlsIO.Base.xml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.csproj.AssemblyReference.cache
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\AddEditPage.g.cs
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\BuhgWindow.g.cs
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Code.g.cs
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\LabWindow.g.cs
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MainWindow.g.cs
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\OkazUsl.g.cs
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AddEditPage1.g.cs
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AddEditPage2.g.cs
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AnlPage.g.cs
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\BuhPage.g.cs
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\Charts.g.cs
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\RegWindow.g.cs
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\StartWindow.g.cs
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Timer.g.cs
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\App.g.cs
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab_Content.g.cs
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab_MarkupCompile.cache
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab_MarkupCompile.lref
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\App.baml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\AddEditPage.baml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\BuhgWindow.baml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Code.baml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\LabWindow.baml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MainWindow.baml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\OkazUsl.baml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AddEditPage1.baml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AddEditPage2.baml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AnlPage.baml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\BuhPage.baml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\Charts.baml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\RegWindow.baml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\StartWindow.baml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Timer.baml
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.g.resources
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.Properties.Resources.resources
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.csproj.GenerateResource.cache
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.csproj.CoreCompileInputs.cache
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.csproj.Up2Date
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.exe
+C:\Users\Egor Smagin\Desktop\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.pdb
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\MedLab.exe.config
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\MedLab.exe
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\MedLab.pdb
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\EntityFramework.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\itextsharp.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\PdfSharp.Charting.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\PdfSharp.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Compression.Base.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Compression.Portable.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Data.WPF.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Pdf.Base.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Pdf.Portable.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.SfGrid.WPF.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.SfGridConverter.WPF.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Shared.WPF.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.XlsIO.Base.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\EntityFramework.xml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\itextsharp.xml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.pdb
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.xml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\PdfSharp.xml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\PdfSharp.Charting.xml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Compression.Base.xml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Compression.Portable.xml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Data.WPF.xml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Pdf.Base.xml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Pdf.Portable.xml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.SfGrid.WPF.xml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.SfGridConverter.WPF.xml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.Shared.WPF.xml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\Syncfusion.XlsIO.Base.xml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.csproj.AssemblyReference.cache
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\AddEditPage.g.cs
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\BuhgWindow.g.cs
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Code.g.cs
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\LabWindow.g.cs
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MainWindow.g.cs
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\OkazUsl.g.cs
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AddEditPage1.g.cs
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AddEditPage2.g.cs
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AnlPage.g.cs
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\BuhPage.g.cs
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\Charts.g.cs
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\RegWindow.g.cs
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\StartWindow.g.cs
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Timer.g.cs
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\App.g.cs
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab_Content.g.cs
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab_MarkupCompile.cache
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab_MarkupCompile.lref
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\App.baml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\AddEditPage.baml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\BuhgWindow.baml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Code.baml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\LabWindow.baml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MainWindow.baml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\OkazUsl.baml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AddEditPage1.baml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AddEditPage2.baml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\AnlPage.baml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\BuhPage.baml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Pages\Charts.baml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\RegWindow.baml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\StartWindow.baml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\Timer.baml
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.g.resources
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.Properties.Resources.resources
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.csproj.GenerateResource.cache
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.csproj.CoreCompileInputs.cache
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.csproj.Up2Date
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.exe
+C:\Users\KON\Desktop\Практика\ПМ-02MedLab\MedLab\MedLab\obj\Debug\MedLab.pdb

@@ -1,0 +1,45 @@
+﻿<Window x:Class="MedLab.LabWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedLab"
+        AllowsTransparency="True"
+        mc:Ignorable="d"
+        Title="LabWindow" Height="550" Width="1018" MouseLeftButtonDown="MoveForm" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Window.Clip>
+        <RectangleGeometry Rect="0,0,1018,550" RadiusX="10" RadiusY="10"/>
+    </Window.Clip>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="183*"></RowDefinition>
+            <RowDefinition Height="183*"></RowDefinition>
+            <RowDefinition Height="148*"></RowDefinition>
+            <RowDefinition Height="35*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1.2" StartPoint="0.,-0.3">
+                <GradientStop Color="#FF278A32"/>
+                <GradientStop Color="#FF23B7AD" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="X" HorizontalAlignment="Left" MouseDoubleClick="ExitForm" Margin="295,0,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" Grid.Column="2"/>
+        <StackPanel Background="Black" Grid.RowSpan="4" Opacity="0.7" Margin="0,0,26,0">
+            <Button x:Name="code" Click="code_Click" Content="Штрих-код" Width="312" Margin="0,200,0,0" Height="40" FontSize="20" FontFamily="MV Boli" FontStyle="Italic" Background="{x:Null}" Foreground="White" BorderBrush="White" FontWeight="Bold"/>
+            <Button  Content="Анализатор" Name="Anl" Click="Anl_Click" Width="312" Height="40" FontSize="20" FontFamily="MV Boli" FontStyle="Italic" Background="{x:Null}" Foreground="White" BorderBrush="White" FontWeight="Bold" Margin="0,-1,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+            <Button  Content="График" x:Name="Charts" Click="Charts_Click" Width="312" Margin="0,-1,0,0" Height="40" FontSize="20" FontFamily="MV Boli" FontStyle="Italic" Background="{x:Null}" Foreground="White" BorderBrush="White" FontWeight="Bold"/>
+            <Image Height="100" Width="100" Margin="100" Source="/image/laborant_1.png"/>
+        </StackPanel>
+        <Image HorizontalAlignment="Left" Height="122" Margin="86,10,0,0" VerticalAlignment="Top" Width="141" Panel.ZIndex="1" Source="/image/Logo-removebg-preview.png"/>
+        <Label x:Name="NameUser" Content="" HorizontalAlignment="Left" Margin="81,133,0,0" VerticalAlignment="Top" Panel.ZIndex="1" FontSize="22" FontWeight="Bold" Foreground="White" FontFamily="MV Boli" Width="232"/>
+        <Label Content="Hello:" HorizontalAlignment="Left" Margin="5,133,0,0" VerticalAlignment="Top" Panel.ZIndex="1" FontSize="22" FontWeight="Bold" Foreground="White" FontFamily="MV Boli"/>
+        <Frame x:Name="MainFrame" Grid.ColumnSpan="3" Margin="313,63,0,24" Grid.RowSpan="3" Navigated="Frame_Navigated" NavigationUIVisibility="Hidden"/>
+
+        <Button Content="Назад" x:Name="back" Click="back_Click"  HorizontalAlignment="Left" Margin="334,143,0,0" VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="2" Width="100" Grid.RowSpan="2" />
+    </Grid>
+</Window>

@@ -1,0 +1,929 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Хранилище MedlabModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="users">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="255" />
+          <Property Name="login" Type="nvarchar" MaxLength="255" />
+          <Property Name="password" Type="nvarchar" MaxLength="255" />
+          <Property Name="ip" Type="nvarchar" MaxLength="255" />
+          <Property Name="lastenter" Type="date" />
+          <Property Name="services" Type="nvarchar" MaxLength="255" />
+          <Property Name="type" Type="int" />
+        </EntityType>
+        <EntityType Name="Бухгалтер">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="выставленныеСчетаСтрахКомпаниями" Type="int" />
+          <Property Name="НаборУслуг" Type="int" />
+          <Property Name="id_user" Type="int" />
+        </EntityType>
+        <EntityType Name="Выставленые счета страховой компании">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Название страховой компании" Type="int" />
+          <Property Name="Сумма" Type="money" />
+        </EntityType>
+        <EntityType Name="Данные анализатора">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Название" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Данные лаборантов">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="НаборУслуг" Type="int" />
+          <Property Name="id_user" Type="int" />
+        </EntityType>
+        <EntityType Name="ДанныеСтраховыхКомпаний">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="insurance_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="country" Type="nvarchar" MaxLength="255" />
+          <Property Name="insurance_address" Type="nvarchar" MaxLength="255" />
+          <Property Name="insurance_inn" Type="int" />
+          <Property Name="ipadress" Type="nvarchar" MaxLength="255" />
+          <Property Name="insurance_p/c" Type="int" />
+          <Property Name="insurance_bik" Type="int" />
+        </EntityType>
+        <EntityType Name="Заказ">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="patient" Type="int" />
+          <Property Name="barcode" Type="int" />
+          <Property Name="date" Type="datetime" />
+          <Property Name="accepted" Type="bit" Nullable="false" />
+          <Property Name="status" Type="nvarchar" MaxLength="255" />
+          <Property Name="finished" Type="datetime" />
+          <Property Name="service" Type="int" />
+        </EntityType>
+        <EntityType Name="ОказаниеУслуг">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="service" Type="int" />
+          <Property Name="result" Type="float" />
+          <Property Name="analyzer" Type="int" />
+          <Property Name="user" Type="int" />
+        </EntityType>
+        <EntityType Name="Пациент">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="login" Type="nvarchar" MaxLength="255" />
+          <Property Name="pwd" Type="nvarchar" MaxLength="255" />
+          <Property Name="birthdate" Type="date" />
+          <Property Name="passport_s" Type="int" />
+          <Property Name="passport_n" Type="int" />
+          <Property Name="phone" Type="nvarchar" MaxLength="255" />
+          <Property Name="email" Type="nvarchar" MaxLength="255" />
+          <Property Name="social_sec_number" Type="int" />
+          <Property Name="ein" Type="nvarchar" MaxLength="255" />
+          <Property Name="страховая компания" Type="int" />
+          <Property Name="guid" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Роль">
+          <Key>
+            <PropertyRef Name="id_Роль" />
+          </Key>
+          <Property Name="id_Роль" Type="int" Nullable="false" />
+          <Property Name="Наименование" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Услуги_лаборатории">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="Наименование" Type="varchar(max)" />
+          <Property Name="Стоимость" Type="money" />
+          <Property Name="Срок выполнения" Type="nvarchar" MaxLength="50" />
+          <Property Name="Среднее отклонение" Type="int" />
+        </EntityType>
+        <Association Name="FK_users_Роль">
+          <End Role="Роль" Type="Self.Роль" Multiplicity="0..1" />
+          <End Role="users" Type="Self.users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Роль">
+              <PropertyRef Name="id_Роль" />
+            </Principal>
+            <Dependent Role="users">
+              <PropertyRef Name="type" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Бухгалтер_users">
+          <End Role="users" Type="Self.users" Multiplicity="0..1" />
+          <End Role="Бухгалтер" Type="Self.Бухгалтер" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Бухгалтер">
+              <PropertyRef Name="id_user" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Бухгалтер_Выставленые счета страховой компании">
+          <End Role="Выставленые счета страховой компании" Type="Self.Выставленые счета страховой компании" Multiplicity="0..1" />
+          <End Role="Бухгалтер" Type="Self.Бухгалтер" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Выставленые счета страховой компании">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Бухгалтер">
+              <PropertyRef Name="выставленныеСчетаСтрахКомпаниями" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Выставленые счета страховой компании_ДанныеСтраховыхКомпаний">
+          <End Role="ДанныеСтраховыхКомпаний" Type="Self.ДанныеСтраховыхКомпаний" Multiplicity="0..1" />
+          <End Role="Выставленые счета страховой компании" Type="Self.Выставленые счета страховой компании" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ДанныеСтраховыхКомпаний">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Выставленые счета страховой компании">
+              <PropertyRef Name="Название страховой компании" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Данные лаборантов_users">
+          <End Role="users" Type="Self.users" Multiplicity="0..1" />
+          <End Role="Данные лаборантов" Type="Self.Данные лаборантов" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Данные лаборантов">
+              <PropertyRef Name="id_user" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Данные лаборантов_Услуги_лаборатории">
+          <End Role="Услуги_лаборатории" Type="Self.Услуги_лаборатории" Multiplicity="0..1" />
+          <End Role="Данные лаборантов" Type="Self.Данные лаборантов" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Услуги_лаборатории">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Данные лаборантов">
+              <PropertyRef Name="НаборУслуг" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Заказ_ОказаниеУслуг">
+          <End Role="ОказаниеУслуг" Type="Self.ОказаниеУслуг" Multiplicity="0..1" />
+          <End Role="Заказ" Type="Self.Заказ" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ОказаниеУслуг">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Заказ">
+              <PropertyRef Name="service" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Заказ_Пациент">
+          <End Role="Пациент" Type="Self.Пациент" Multiplicity="0..1" />
+          <End Role="Заказ" Type="Self.Заказ" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Пациент">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Заказ">
+              <PropertyRef Name="patient" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ОказаниеУслуг_Данные анализатора">
+          <End Role="Данные анализатора" Type="Self.Данные анализатора" Multiplicity="0..1" />
+          <End Role="ОказаниеУслуг" Type="Self.ОказаниеУслуг" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Данные анализатора">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ОказаниеУслуг">
+              <PropertyRef Name="analyzer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ОказаниеУслуг_Услуги_лаборатории">
+          <End Role="Услуги_лаборатории" Type="Self.Услуги_лаборатории" Multiplicity="0..1" />
+          <End Role="ОказаниеУслуг" Type="Self.ОказаниеУслуг" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Услуги_лаборатории">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ОказаниеУслуг">
+              <PropertyRef Name="service" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Пациент_ДанныеСтраховыхКомпаний">
+          <End Role="ДанныеСтраховыхКомпаний" Type="Self.ДанныеСтраховыхКомпаний" Multiplicity="0..1" />
+          <End Role="Пациент" Type="Self.Пациент" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ДанныеСтраховыхКомпаний">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Пациент">
+              <PropertyRef Name="страховая компания" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+        <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="Хранилище MedlabModelContainer">
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Бухгалтер" EntityType="Self.Бухгалтер" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Выставленые счета страховой компании" EntityType="Self.Выставленые счета страховой компании" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Данные анализатора" EntityType="Self.Данные анализатора" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Данные лаборантов" EntityType="Self.Данные лаборантов" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ДанныеСтраховыхКомпаний" EntityType="Self.ДанныеСтраховыхКомпаний" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Заказ" EntityType="Self.Заказ" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ОказаниеУслуг" EntityType="Self.ОказаниеУслуг" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Пациент" EntityType="Self.Пациент" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Роль" EntityType="Self.Роль" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Услуги_лаборатории" EntityType="Self.Услуги_лаборатории" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_users_Роль" Association="Self.FK_users_Роль">
+            <End Role="Роль" EntitySet="Роль" />
+            <End Role="users" EntitySet="users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Бухгалтер_users" Association="Self.FK_Бухгалтер_users">
+            <End Role="users" EntitySet="users" />
+            <End Role="Бухгалтер" EntitySet="Бухгалтер" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Бухгалтер_Выставленые счета страховой компании" Association="Self.FK_Бухгалтер_Выставленые счета страховой компании">
+            <End Role="Выставленые счета страховой компании" EntitySet="Выставленые счета страховой компании" />
+            <End Role="Бухгалтер" EntitySet="Бухгалтер" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Выставленые счета страховой компании_ДанныеСтраховыхКомпаний" Association="Self.FK_Выставленые счета страховой компании_ДанныеСтраховыхКомпаний">
+            <End Role="ДанныеСтраховыхКомпаний" EntitySet="ДанныеСтраховыхКомпаний" />
+            <End Role="Выставленые счета страховой компании" EntitySet="Выставленые счета страховой компании" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Данные лаборантов_users" Association="Self.FK_Данные лаборантов_users">
+            <End Role="users" EntitySet="users" />
+            <End Role="Данные лаборантов" EntitySet="Данные лаборантов" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Данные лаборантов_Услуги_лаборатории" Association="Self.FK_Данные лаборантов_Услуги_лаборатории">
+            <End Role="Услуги_лаборатории" EntitySet="Услуги_лаборатории" />
+            <End Role="Данные лаборантов" EntitySet="Данные лаборантов" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Заказ_ОказаниеУслуг" Association="Self.FK_Заказ_ОказаниеУслуг">
+            <End Role="ОказаниеУслуг" EntitySet="ОказаниеУслуг" />
+            <End Role="Заказ" EntitySet="Заказ" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Заказ_Пациент" Association="Self.FK_Заказ_Пациент">
+            <End Role="Пациент" EntitySet="Пациент" />
+            <End Role="Заказ" EntitySet="Заказ" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ОказаниеУслуг_Данные анализатора" Association="Self.FK_ОказаниеУслуг_Данные анализатора">
+            <End Role="Данные анализатора" EntitySet="Данные анализатора" />
+            <End Role="ОказаниеУслуг" EntitySet="ОказаниеУслуг" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ОказаниеУслуг_Услуги_лаборатории" Association="Self.FK_ОказаниеУслуг_Услуги_лаборатории">
+            <End Role="Услуги_лаборатории" EntitySet="Услуги_лаборатории" />
+            <End Role="ОказаниеУслуг" EntitySet="ОказаниеУслуг" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Пациент_ДанныеСтраховыхКомпаний" Association="Self.FK_Пациент_ДанныеСтраховыхКомпаний">
+            <End Role="ДанныеСтраховыхКомпаний" EntitySet="ДанныеСтраховыхКомпаний" />
+            <End Role="Пациент" EntitySet="Пациент" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MedlabModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="users">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="login" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ip" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="lastenter" Type="DateTime" Precision="0" />
+          <Property Name="services" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="type" Type="Int32" />
+          <NavigationProperty Name="Роль" Relationship="Self.FK_users_Роль" FromRole="users" ToRole="Роль" />
+          <NavigationProperty Name="Бухгалтер" Relationship="Self.FK_Бухгалтер_users" FromRole="users" ToRole="Бухгалтер" />
+          <NavigationProperty Name="Данные_лаборантов" Relationship="Self.FK_Данные_лаборантов_users" FromRole="users" ToRole="Данные_лаборантов" />
+        </EntityType>
+        <EntityType Name="Бухгалтер">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="выставленныеСчетаСтрахКомпаниями" Type="Int32" />
+          <Property Name="НаборУслуг" Type="Int32" />
+          <Property Name="id_user" Type="Int32" />
+          <NavigationProperty Name="users" Relationship="Self.FK_Бухгалтер_users" FromRole="Бухгалтер" ToRole="users" />
+          <NavigationProperty Name="Выставленые_счета_страховой_компании" Relationship="Self.FK_Бухгалтер_Выставленые_счета_страховой_компании" FromRole="Бухгалтер" ToRole="Выставленые_счета_страховой_компании" />
+        </EntityType>
+        <EntityType Name="Выставленые_счета_страховой_компании">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Название_страховой_компании" Type="Int32" />
+          <Property Name="Сумма" Type="Decimal" Precision="19" Scale="4" />
+          <NavigationProperty Name="Бухгалтер" Relationship="Self.FK_Бухгалтер_Выставленые_счета_страховой_компании" FromRole="Выставленые_счета_страховой_компании" ToRole="Бухгалтер" />
+          <NavigationProperty Name="ДанныеСтраховыхКомпаний" Relationship="Self.FK_Выставленые_счета_страховой_компании_ДанныеСтраховыхКомпаний" FromRole="Выставленые_счета_страховой_компании" ToRole="ДанныеСтраховыхКомпаний" />
+        </EntityType>
+        <EntityType Name="Данные_анализатора">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="Название" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ОказаниеУслуг" Relationship="Self.FK_ОказаниеУслуг_Данные_анализатора" FromRole="Данные_анализатора" ToRole="ОказаниеУслуг" />
+        </EntityType>
+        <EntityType Name="Данные_лаборантов">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="НаборУслуг" Type="Int32" />
+          <Property Name="id_user" Type="Int32" />
+          <NavigationProperty Name="users" Relationship="Self.FK_Данные_лаборантов_users" FromRole="Данные_лаборантов" ToRole="users" />
+          <NavigationProperty Name="Услуги_лаборатории" Relationship="Self.FK_Данные_лаборантов_Услуги_лаборатории" FromRole="Данные_лаборантов" ToRole="Услуги_лаборатории" />
+        </EntityType>
+        <EntityType Name="ДанныеСтраховыхКомпаний">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="insurance_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="country" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="insurance_address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="insurance_inn" Type="Int32" />
+          <Property Name="ipadress" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="insurance_p_c" Type="Int32" />
+          <Property Name="insurance_bik" Type="Int32" />
+          <NavigationProperty Name="Выставленые_счета_страховой_компании" Relationship="Self.FK_Выставленые_счета_страховой_компании_ДанныеСтраховыхКомпаний" FromRole="ДанныеСтраховыхКомпаний" ToRole="Выставленые_счета_страховой_компании" />
+          <NavigationProperty Name="Пациент" Relationship="Self.FK_Пациент_ДанныеСтраховыхКомпаний" FromRole="ДанныеСтраховыхКомпаний" ToRole="Пациент" />
+        </EntityType>
+        <EntityType Name="Заказ">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="patient" Type="Int32" />
+          <Property Name="barcode" Type="Int32" />
+          <Property Name="date" Type="DateTime" Precision="3" />
+          <Property Name="accepted" Type="Boolean" Nullable="false" />
+          <Property Name="status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="finished" Type="DateTime" Precision="3" />
+          <Property Name="service" Type="Int32" />
+          <NavigationProperty Name="ОказаниеУслуг" Relationship="Self.FK_Заказ_ОказаниеУслуг" FromRole="Заказ" ToRole="ОказаниеУслуг" />
+          <NavigationProperty Name="Пациент" Relationship="Self.FK_Заказ_Пациент" FromRole="Заказ" ToRole="Пациент" />
+        </EntityType>
+        <EntityType Name="ОказаниеУслуг">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="service" Type="Int32" />
+          <Property Name="result" Type="Double" />
+          <Property Name="analyzer" Type="Int32" />
+          <Property Name="user" Type="Int32" />
+          <NavigationProperty Name="Данные_анализатора" Relationship="Self.FK_ОказаниеУслуг_Данные_анализатора" FromRole="ОказаниеУслуг" ToRole="Данные_анализатора" />
+          <NavigationProperty Name="Заказ" Relationship="Self.FK_Заказ_ОказаниеУслуг" FromRole="ОказаниеУслуг" ToRole="Заказ" />
+          <NavigationProperty Name="Услуги_лаборатории" Relationship="Self.FK_ОказаниеУслуг_Услуги_лаборатории" FromRole="ОказаниеУслуг" ToRole="Услуги_лаборатории" />
+        </EntityType>
+        <EntityType Name="Пациент">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="login" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="pwd" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="birthdate" Type="DateTime" Precision="0" />
+          <Property Name="passport_s" Type="Int32" />
+          <Property Name="passport_n" Type="Int32" />
+          <Property Name="phone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="social_sec_number" Type="Int32" />
+          <Property Name="ein" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="страховая_компания" Type="Int32" />
+          <Property Name="guid" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ДанныеСтраховыхКомпаний" Relationship="Self.FK_Пациент_ДанныеСтраховыхКомпаний" FromRole="Пациент" ToRole="ДанныеСтраховыхКомпаний" />
+          <NavigationProperty Name="Заказ" Relationship="Self.FK_Заказ_Пациент" FromRole="Пациент" ToRole="Заказ" />
+        </EntityType>
+        <EntityType Name="Роль">
+          <Key>
+            <PropertyRef Name="id_Роль" />
+          </Key>
+          <Property Name="id_Роль" Type="Int32" Nullable="false" />
+          <Property Name="Наименование" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="users" Relationship="Self.FK_users_Роль" FromRole="Роль" ToRole="users" />
+        </EntityType>
+        <EntityType Name="Услуги_лаборатории">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="Наименование" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Стоимость" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Срок_выполнения" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Среднее_отклонение" Type="Int32" />
+          <NavigationProperty Name="Данные_лаборантов" Relationship="Self.FK_Данные_лаборантов_Услуги_лаборатории" FromRole="Услуги_лаборатории" ToRole="Данные_лаборантов" />
+          <NavigationProperty Name="ОказаниеУслуг" Relationship="Self.FK_ОказаниеУслуг_Услуги_лаборатории" FromRole="Услуги_лаборатории" ToRole="ОказаниеУслуг" />
+        </EntityType>
+        <Association Name="FK_users_Роль">
+          <End Role="Роль" Type="Self.Роль" Multiplicity="0..1" />
+          <End Role="users" Type="Self.users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Роль">
+              <PropertyRef Name="id_Роль" />
+            </Principal>
+            <Dependent Role="users">
+              <PropertyRef Name="type" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Бухгалтер_users">
+          <End Role="users" Type="Self.users" Multiplicity="0..1" />
+          <End Role="Бухгалтер" Type="Self.Бухгалтер" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Бухгалтер">
+              <PropertyRef Name="id_user" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Данные_лаборантов_users">
+          <End Role="users" Type="Self.users" Multiplicity="0..1" />
+          <End Role="Данные_лаборантов" Type="Self.Данные_лаборантов" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Данные_лаборантов">
+              <PropertyRef Name="id_user" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Бухгалтер_Выставленые_счета_страховой_компании">
+          <End Role="Выставленые_счета_страховой_компании" Type="Self.Выставленые_счета_страховой_компании" Multiplicity="0..1" />
+          <End Role="Бухгалтер" Type="Self.Бухгалтер" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Выставленые_счета_страховой_компании">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Бухгалтер">
+              <PropertyRef Name="выставленныеСчетаСтрахКомпаниями" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Выставленые_счета_страховой_компании_ДанныеСтраховыхКомпаний">
+          <End Role="ДанныеСтраховыхКомпаний" Type="Self.ДанныеСтраховыхКомпаний" Multiplicity="0..1" />
+          <End Role="Выставленые_счета_страховой_компании" Type="Self.Выставленые_счета_страховой_компании" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ДанныеСтраховыхКомпаний">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Выставленые_счета_страховой_компании">
+              <PropertyRef Name="Название_страховой_компании" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ОказаниеУслуг_Данные_анализатора">
+          <End Role="Данные_анализатора" Type="Self.Данные_анализатора" Multiplicity="0..1" />
+          <End Role="ОказаниеУслуг" Type="Self.ОказаниеУслуг" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Данные_анализатора">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ОказаниеУслуг">
+              <PropertyRef Name="analyzer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Данные_лаборантов_Услуги_лаборатории">
+          <End Role="Услуги_лаборатории" Type="Self.Услуги_лаборатории" Multiplicity="0..1" />
+          <End Role="Данные_лаборантов" Type="Self.Данные_лаборантов" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Услуги_лаборатории">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Данные_лаборантов">
+              <PropertyRef Name="НаборУслуг" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Пациент_ДанныеСтраховыхКомпаний">
+          <End Role="ДанныеСтраховыхКомпаний" Type="Self.ДанныеСтраховыхКомпаний" Multiplicity="0..1" />
+          <End Role="Пациент" Type="Self.Пациент" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ДанныеСтраховыхКомпаний">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Пациент">
+              <PropertyRef Name="страховая_компания" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Заказ_ОказаниеУслуг">
+          <End Role="ОказаниеУслуг" Type="Self.ОказаниеУслуг" Multiplicity="0..1" />
+          <End Role="Заказ" Type="Self.Заказ" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ОказаниеУслуг">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Заказ">
+              <PropertyRef Name="service" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Заказ_Пациент">
+          <End Role="Пациент" Type="Self.Пациент" Multiplicity="0..1" />
+          <End Role="Заказ" Type="Self.Заказ" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Пациент">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Заказ">
+              <PropertyRef Name="patient" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ОказаниеУслуг_Услуги_лаборатории">
+          <End Role="Услуги_лаборатории" Type="Self.Услуги_лаборатории" Multiplicity="0..1" />
+          <End Role="ОказаниеУслуг" Type="Self.ОказаниеУслуг" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Услуги_лаборатории">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ОказаниеУслуг">
+              <PropertyRef Name="service" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MedlabEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="users" EntityType="Self.users" />
+          <EntitySet Name="Бухгалтер" EntityType="Self.Бухгалтер" />
+          <EntitySet Name="Выставленые_счета_страховой_компании" EntityType="Self.Выставленые_счета_страховой_компании" />
+          <EntitySet Name="Данные_анализатора" EntityType="Self.Данные_анализатора" />
+          <EntitySet Name="Данные_лаборантов" EntityType="Self.Данные_лаборантов" />
+          <EntitySet Name="ДанныеСтраховыхКомпаний" EntityType="Self.ДанныеСтраховыхКомпаний" />
+          <EntitySet Name="Заказ" EntityType="Self.Заказ" />
+          <EntitySet Name="ОказаниеУслуг" EntityType="Self.ОказаниеУслуг" />
+          <EntitySet Name="Пациент" EntityType="Self.Пациент" />
+          <EntitySet Name="Роль" EntityType="Self.Роль" />
+          <EntitySet Name="Услуги_лаборатории" EntityType="Self.Услуги_лаборатории" />
+          <AssociationSet Name="FK_users_Роль" Association="Self.FK_users_Роль">
+            <End Role="Роль" EntitySet="Роль" />
+            <End Role="users" EntitySet="users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Бухгалтер_users" Association="Self.FK_Бухгалтер_users">
+            <End Role="users" EntitySet="users" />
+            <End Role="Бухгалтер" EntitySet="Бухгалтер" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Данные_лаборантов_users" Association="Self.FK_Данные_лаборантов_users">
+            <End Role="users" EntitySet="users" />
+            <End Role="Данные_лаборантов" EntitySet="Данные_лаборантов" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Бухгалтер_Выставленые_счета_страховой_компании" Association="Self.FK_Бухгалтер_Выставленые_счета_страховой_компании">
+            <End Role="Выставленые_счета_страховой_компании" EntitySet="Выставленые_счета_страховой_компании" />
+            <End Role="Бухгалтер" EntitySet="Бухгалтер" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Выставленые_счета_страховой_компании_ДанныеСтраховыхКомпаний" Association="Self.FK_Выставленые_счета_страховой_компании_ДанныеСтраховыхКомпаний">
+            <End Role="ДанныеСтраховыхКомпаний" EntitySet="ДанныеСтраховыхКомпаний" />
+            <End Role="Выставленые_счета_страховой_компании" EntitySet="Выставленые_счета_страховой_компании" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ОказаниеУслуг_Данные_анализатора" Association="Self.FK_ОказаниеУслуг_Данные_анализатора">
+            <End Role="Данные_анализатора" EntitySet="Данные_анализатора" />
+            <End Role="ОказаниеУслуг" EntitySet="ОказаниеУслуг" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Данные_лаборантов_Услуги_лаборатории" Association="Self.FK_Данные_лаборантов_Услуги_лаборатории">
+            <End Role="Услуги_лаборатории" EntitySet="Услуги_лаборатории" />
+            <End Role="Данные_лаборантов" EntitySet="Данные_лаборантов" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Пациент_ДанныеСтраховыхКомпаний" Association="Self.FK_Пациент_ДанныеСтраховыхКомпаний">
+            <End Role="ДанныеСтраховыхКомпаний" EntitySet="ДанныеСтраховыхКомпаний" />
+            <End Role="Пациент" EntitySet="Пациент" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Заказ_ОказаниеУслуг" Association="Self.FK_Заказ_ОказаниеУслуг">
+            <End Role="ОказаниеУслуг" EntitySet="ОказаниеУслуг" />
+            <End Role="Заказ" EntitySet="Заказ" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Заказ_Пациент" Association="Self.FK_Заказ_Пациент">
+            <End Role="Пациент" EntitySet="Пациент" />
+            <End Role="Заказ" EntitySet="Заказ" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ОказаниеУслуг_Услуги_лаборатории" Association="Self.FK_ОказаниеУслуг_Услуги_лаборатории">
+            <End Role="Услуги_лаборатории" EntitySet="Услуги_лаборатории" />
+            <End Role="ОказаниеУслуг" EntitySet="ОказаниеУслуг" />
+          </AssociationSet>
+          <FunctionImport Name="sp_alterdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_creatediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_dropdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(MedlabModel.sp_helpdiagramdefinition_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(MedlabModel.sp_helpdiagrams_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_renamediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="new_diagramname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_upgraddiagrams" />
+        </EntityContainer>
+        <ComplexType Name="sp_helpdiagramdefinition_Result">
+          <Property Type="Int32" Name="version" Nullable="true" />
+          <Property Type="Binary" Name="definition" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagrams_Result">
+          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+          <Property Type="Int32" Name="OwnerID" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище MedlabModelContainer" CdmEntityContainer="MedlabEntities">
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="MedlabModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="MedlabModel.users">
+              <MappingFragment StoreEntitySet="users">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="login" ColumnName="login" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="ip" ColumnName="ip" />
+                <ScalarProperty Name="lastenter" ColumnName="lastenter" />
+                <ScalarProperty Name="services" ColumnName="services" />
+                <ScalarProperty Name="type" ColumnName="type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Бухгалтер">
+            <EntityTypeMapping TypeName="MedlabModel.Бухгалтер">
+              <MappingFragment StoreEntitySet="Бухгалтер">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="выставленныеСчетаСтрахКомпаниями" ColumnName="выставленныеСчетаСтрахКомпаниями" />
+                <ScalarProperty Name="НаборУслуг" ColumnName="НаборУслуг" />
+                <ScalarProperty Name="id_user" ColumnName="id_user" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Выставленые_счета_страховой_компании">
+            <EntityTypeMapping TypeName="MedlabModel.Выставленые_счета_страховой_компании">
+              <MappingFragment StoreEntitySet="Выставленые счета страховой компании">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Название_страховой_компании" ColumnName="Название страховой компании" />
+                <ScalarProperty Name="Сумма" ColumnName="Сумма" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Данные_анализатора">
+            <EntityTypeMapping TypeName="MedlabModel.Данные_анализатора">
+              <MappingFragment StoreEntitySet="Данные анализатора">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Название" ColumnName="Название" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Данные_лаборантов">
+            <EntityTypeMapping TypeName="MedlabModel.Данные_лаборантов">
+              <MappingFragment StoreEntitySet="Данные лаборантов">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="НаборУслуг" ColumnName="НаборУслуг" />
+                <ScalarProperty Name="id_user" ColumnName="id_user" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ДанныеСтраховыхКомпаний">
+            <EntityTypeMapping TypeName="MedlabModel.ДанныеСтраховыхКомпаний">
+              <MappingFragment StoreEntitySet="ДанныеСтраховыхКомпаний">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="insurance_name" ColumnName="insurance_name" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="insurance_address" ColumnName="insurance_address" />
+                <ScalarProperty Name="insurance_inn" ColumnName="insurance_inn" />
+                <ScalarProperty Name="ipadress" ColumnName="ipadress" />
+                <ScalarProperty Name="insurance_p_c" ColumnName="insurance_p/c" />
+                <ScalarProperty Name="insurance_bik" ColumnName="insurance_bik" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Заказ">
+            <EntityTypeMapping TypeName="MedlabModel.Заказ">
+              <MappingFragment StoreEntitySet="Заказ">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="patient" ColumnName="patient" />
+                <ScalarProperty Name="barcode" ColumnName="barcode" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="accepted" ColumnName="accepted" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="finished" ColumnName="finished" />
+                <ScalarProperty Name="service" ColumnName="service" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ОказаниеУслуг">
+            <EntityTypeMapping TypeName="MedlabModel.ОказаниеУслуг">
+              <MappingFragment StoreEntitySet="ОказаниеУслуг">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="service" ColumnName="service" />
+                <ScalarProperty Name="result" ColumnName="result" />
+                <ScalarProperty Name="analyzer" ColumnName="analyzer" />
+                <ScalarProperty Name="user" ColumnName="user" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Пациент">
+            <EntityTypeMapping TypeName="MedlabModel.Пациент">
+              <MappingFragment StoreEntitySet="Пациент">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="login" ColumnName="login" />
+                <ScalarProperty Name="pwd" ColumnName="pwd" />
+                <ScalarProperty Name="birthdate" ColumnName="birthdate" />
+                <ScalarProperty Name="passport_s" ColumnName="passport_s" />
+                <ScalarProperty Name="passport_n" ColumnName="passport_n" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="social_sec_number" ColumnName="social_sec_number" />
+                <ScalarProperty Name="ein" ColumnName="ein" />
+                <ScalarProperty Name="страховая_компания" ColumnName="страховая компания" />
+                <ScalarProperty Name="guid" ColumnName="guid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Роль">
+            <EntityTypeMapping TypeName="MedlabModel.Роль">
+              <MappingFragment StoreEntitySet="Роль">
+                <ScalarProperty Name="id_Роль" ColumnName="id_Роль" />
+                <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Услуги_лаборатории">
+            <EntityTypeMapping TypeName="MedlabModel.Услуги_лаборатории">
+              <MappingFragment StoreEntitySet="Услуги_лаборатории">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+                <ScalarProperty Name="Стоимость" ColumnName="Стоимость" />
+                <ScalarProperty Name="Срок_выполнения" ColumnName="Срок выполнения" />
+                <ScalarProperty Name="Среднее_отклонение" ColumnName="Среднее отклонение" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Хранилище MedlabModel.sp_alterdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Хранилище MedlabModel.sp_creatediagram" />
+          <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Хранилище MedlabModel.sp_dropdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Хранилище MedlabModel.sp_helpdiagramdefinition">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="MedlabModel.sp_helpdiagramdefinition_Result">
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Хранилище MedlabModel.sp_helpdiagrams">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="MedlabModel.sp_helpdiagrams_Result">
+                <ScalarProperty Name="Database" ColumnName="Database" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Хранилище MedlabModel.sp_renamediagram" />
+          <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Хранилище MedlabModel.sp_upgraddiagrams" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

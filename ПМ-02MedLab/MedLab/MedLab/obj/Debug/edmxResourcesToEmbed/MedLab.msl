@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище MedlabModelContainer" CdmEntityContainer="MedlabEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="MedlabModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="MedlabModel.users">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="lastenter" ColumnName="lastenter" />
+          <ScalarProperty Name="services" ColumnName="services" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Бухгалтер">
+      <EntityTypeMapping TypeName="MedlabModel.Бухгалтер">
+        <MappingFragment StoreEntitySet="Бухгалтер">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="выставленныеСчетаСтрахКомпаниями" ColumnName="выставленныеСчетаСтрахКомпаниями" />
+          <ScalarProperty Name="НаборУслуг" ColumnName="НаборУслуг" />
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Выставленые_счета_страховой_компании">
+      <EntityTypeMapping TypeName="MedlabModel.Выставленые_счета_страховой_компании">
+        <MappingFragment StoreEntitySet="Выставленые счета страховой компании">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Название_страховой_компании" ColumnName="Название страховой компании" />
+          <ScalarProperty Name="Сумма" ColumnName="Сумма" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Данные_анализатора">
+      <EntityTypeMapping TypeName="MedlabModel.Данные_анализатора">
+        <MappingFragment StoreEntitySet="Данные анализатора">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Название" ColumnName="Название" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Данные_лаборантов">
+      <EntityTypeMapping TypeName="MedlabModel.Данные_лаборантов">
+        <MappingFragment StoreEntitySet="Данные лаборантов">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="НаборУслуг" ColumnName="НаборУслуг" />
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ДанныеСтраховыхКомпаний">
+      <EntityTypeMapping TypeName="MedlabModel.ДанныеСтраховыхКомпаний">
+        <MappingFragment StoreEntitySet="ДанныеСтраховыхКомпаний">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="insurance_name" ColumnName="insurance_name" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="insurance_address" ColumnName="insurance_address" />
+          <ScalarProperty Name="insurance_inn" ColumnName="insurance_inn" />
+          <ScalarProperty Name="ipadress" ColumnName="ipadress" />
+          <ScalarProperty Name="insurance_p_c" ColumnName="insurance_p/c" />
+          <ScalarProperty Name="insurance_bik" ColumnName="insurance_bik" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Заказ">
+      <EntityTypeMapping TypeName="MedlabModel.Заказ">
+        <MappingFragment StoreEntitySet="Заказ">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="patient" ColumnName="patient" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="accepted" ColumnName="accepted" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="finished" ColumnName="finished" />
+          <ScalarProperty Name="service" ColumnName="service" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ОказаниеУслуг">
+      <EntityTypeMapping TypeName="MedlabModel.ОказаниеУслуг">
+        <MappingFragment StoreEntitySet="ОказаниеУслуг">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="service" ColumnName="service" />
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="analyzer" ColumnName="analyzer" />
+          <ScalarProperty Name="user" ColumnName="user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Пациент">
+      <EntityTypeMapping TypeName="MedlabModel.Пациент">
+        <MappingFragment StoreEntitySet="Пациент">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="pwd" ColumnName="pwd" />
+          <ScalarProperty Name="birthdate" ColumnName="birthdate" />
+          <ScalarProperty Name="passport_s" ColumnName="passport_s" />
+          <ScalarProperty Name="passport_n" ColumnName="passport_n" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="social_sec_number" ColumnName="social_sec_number" />
+          <ScalarProperty Name="ein" ColumnName="ein" />
+          <ScalarProperty Name="страховая_компания" ColumnName="страховая компания" />
+          <ScalarProperty Name="guid" ColumnName="guid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Роль">
+      <EntityTypeMapping TypeName="MedlabModel.Роль">
+        <MappingFragment StoreEntitySet="Роль">
+          <ScalarProperty Name="id_Роль" ColumnName="id_Роль" />
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Услуги_лаборатории">
+      <EntityTypeMapping TypeName="MedlabModel.Услуги_лаборатории">
+        <MappingFragment StoreEntitySet="Услуги_лаборатории">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+          <ScalarProperty Name="Стоимость" ColumnName="Стоимость" />
+          <ScalarProperty Name="Срок_выполнения" ColumnName="Срок выполнения" />
+          <ScalarProperty Name="Среднее_отклонение" ColumnName="Среднее отклонение" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Хранилище MedlabModel.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Хранилище MedlabModel.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Хранилище MedlabModel.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Хранилище MedlabModel.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MedlabModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Хранилище MedlabModel.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MedlabModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Хранилище MedlabModel.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Хранилище MedlabModel.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

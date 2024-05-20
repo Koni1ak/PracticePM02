@@ -1,0 +1,22 @@
+﻿<Window x:Class="MedLab.Timer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedLab"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        Title="Timer"  Height="200" Loaded="loadform" WindowStyle="None" WindowStartupLocation="CenterScreen" Width="300">
+    <Window.Clip>
+        <RectangleGeometry Rect="0,0,300,200" RadiusX="10" RadiusY="10"/>
+    </Window.Clip>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="-0.3,0.5">
+                <GradientStop Color="#FF278A32"/>
+                <GradientStop Color="#FF23B7AD" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock x:Name="TB1" Margin="15,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" Height="49" FontFamily="Algerian" FontSize="30" TextAlignment="Center" Padding="0,0,0,5" Foreground="White" FontWeight="Normal"/>
+    </Grid>
+</Window>

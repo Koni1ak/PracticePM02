@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Справочник_номеровModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Группа_контактов">
+    <Key>
+      <PropertyRef Name="ID_группы_контактов" />
+    </Key>
+    <Property Name="ID_группы_контактов" Type="Int32" Nullable="false" />
+    <Property Name="Название" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Контакты" Relationship="Self.FK_Контакты_Группа_контактов" FromRole="Группа_контактов" ToRole="Контакты" />
+  </EntityType>
+  <EntityType Name="Должность">
+    <Key>
+      <PropertyRef Name="ID_должности" />
+    </Key>
+    <Property Name="ID_должности" Type="Int32" Nullable="false" />
+    <Property Name="Наименование" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Контакты" Relationship="Self.FK_Контакты_Должность" FromRole="Должность" ToRole="Контакты" />
+  </EntityType>
+  <EntityType Name="Компания">
+    <Key>
+      <PropertyRef Name="ID_компании" />
+    </Key>
+    <Property Name="ID_компании" Type="Int32" Nullable="false" />
+    <Property Name="Наименование" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Контакты" Relationship="Self.FK_Контакты_Компания" FromRole="Компания" ToRole="Контакты" />
+  </EntityType>
+  <EntityType Name="Контакты">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Фамилия" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Имя" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Отчество" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Номер_телефона" Type="String" MaxLength="18" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Электронная_почта" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ID_компании" Type="Int32" />
+    <Property Name="ID_должности" Type="Int32" />
+    <Property Name="ID_группы_контактов" Type="Int32" />
+    <Property Name="Дата_рождения" Type="DateTime" Precision="0" />
+    <Property Name="Фотография" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Группа_контактов" Relationship="Self.FK_Контакты_Группа_контактов" FromRole="Контакты" ToRole="Группа_контактов" />
+    <NavigationProperty Name="Должность" Relationship="Self.FK_Контакты_Должность" FromRole="Контакты" ToRole="Должность" />
+    <NavigationProperty Name="Компания" Relationship="Self.FK_Контакты_Компания" FromRole="Контакты" ToRole="Компания" />
+  </EntityType>
+  <Association Name="FK_Контакты_Группа_контактов">
+    <End Role="Группа_контактов" Type="Self.Группа_контактов" Multiplicity="0..1" />
+    <End Role="Контакты" Type="Self.Контакты" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Группа_контактов">
+        <PropertyRef Name="ID_группы_контактов" />
+      </Principal>
+      <Dependent Role="Контакты">
+        <PropertyRef Name="ID_группы_контактов" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Контакты_Должность">
+    <End Role="Должность" Type="Self.Должность" Multiplicity="0..1" />
+    <End Role="Контакты" Type="Self.Контакты" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Должность">
+        <PropertyRef Name="ID_должности" />
+      </Principal>
+      <Dependent Role="Контакты">
+        <PropertyRef Name="ID_должности" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Контакты_Компания">
+    <End Role="Компания" Type="Self.Компания" Multiplicity="0..1" />
+    <End Role="Контакты" Type="Self.Контакты" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Компания">
+        <PropertyRef Name="ID_компании" />
+      </Principal>
+      <Dependent Role="Контакты">
+        <PropertyRef Name="ID_компании" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Справочник_номеровEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Группа_контактов" EntityType="Self.Группа_контактов" />
+    <EntitySet Name="Должность" EntityType="Self.Должность" />
+    <EntitySet Name="Компания" EntityType="Self.Компания" />
+    <EntitySet Name="Контакты" EntityType="Self.Контакты" />
+    <AssociationSet Name="FK_Контакты_Группа_контактов" Association="Self.FK_Контакты_Группа_контактов">
+      <End Role="Группа_контактов" EntitySet="Группа_контактов" />
+      <End Role="Контакты" EntitySet="Контакты" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Контакты_Должность" Association="Self.FK_Контакты_Должность">
+      <End Role="Должность" EntitySet="Должность" />
+      <End Role="Контакты" EntitySet="Контакты" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Контакты_Компания" Association="Self.FK_Контакты_Компания">
+      <End Role="Компания" EntitySet="Компания" />
+      <End Role="Контакты" EntitySet="Контакты" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

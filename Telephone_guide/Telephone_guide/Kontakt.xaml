@@ -1,0 +1,26 @@
+﻿<Window x:Class="Telephone_guide.Kontakt"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Telephone_guide"
+        mc:Ignorable="d"
+        Title="Хранение и редактирование контактов" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dat1"  ItemsSource="{Binding phoneData}"   Margin="10,50,10,140"/>
+        <Button Content="Показать данные" HorizontalAlignment="Left" Margin="10,311,0,0" VerticalAlignment="Top" Click="Button_Click" FontWeight="Bold" Width="113"/>
+        <Button x:Name="red" Content="Редактирование контакта" HorizontalAlignment="Left" Margin="128,311,0,0" VerticalAlignment="Top" Width="155" FontWeight="Bold" Click="red_Click"/>
+        <Button x:Name="delete" Content="Удаление контакта" HorizontalAlignment="Left" Margin="449,311,0,0" VerticalAlignment="Top" Width="122" FontWeight="Bold" Click="delete_Click"/>
+        <Button x:Name="fam" Content="Сортировка по фамилии" HorizontalAlignment="Left" Margin="476,344,0,0" VerticalAlignment="Top" Width="155" Click="fam_Click"/>
+        <Button x:Name="imub" Content="Сортировка по имени (убывание)" HorizontalAlignment="Left" Margin="588,311,0,0" VerticalAlignment="Top" Width="202" Click="imub_Click"/>
+        <Button x:Name="imvozr" Content="Сортировка по имени (возрастание)" HorizontalAlignment="Left" Margin="10,344,0,0" VerticalAlignment="Top" Width="211" Click="imvozr_Click"/>
+        <Button x:Name="CSV" Content="Экспорт в CSV" HorizontalAlignment="Left" Margin="236,344,0,0" VerticalAlignment="Top" Width="96" FontWeight="Bold" Click="CSV_Click"/>
+        <Button x:Name="chvet" Content="Выделение цветом" HorizontalAlignment="Left" Margin="351,344,0,0" VerticalAlignment="Top" Width="112" Click="chvet_Click"/>
+        <Button x:Name="sohr" Content="Сохранение изменений" HorizontalAlignment="Left" Margin="288,311,0,0" VerticalAlignment="Top" Width="156" FontWeight="Bold" Click="sohr_Click"/>
+        <Button x:Name="filtr" Content="Фильтрация по группе" HorizontalAlignment="Left" Margin="645,344,0,0" VerticalAlignment="Top" Width="145" Click="filtr_Click"/>
+        <TextBox x:Name="poisk" HorizontalAlignment="Left" Margin="598,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="поиск" Content="Поиск" HorizontalAlignment="Left" Margin="734,10,0,0" VerticalAlignment="Top" Height="18" Width="45" FontWeight="Bold" Click="поиск_Click"/>
+        <Label Content="КОНТАКТЫ" HorizontalAlignment="Left" Margin="123,10,0,0" VerticalAlignment="Top" Height="35" Width="259" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
